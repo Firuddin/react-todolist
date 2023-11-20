@@ -76,3 +76,17 @@ button{
 button:hover{
   background-color: darkslategray;
 }
+ol{
+background-color: chocolate;
+padding: 10px;
+margin: 8px 0px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+
