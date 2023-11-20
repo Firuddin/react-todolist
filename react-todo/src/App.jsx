@@ -37,7 +37,7 @@ onChange={e=>setNewItem(e.target.value)}
 <ul>
   {items.map(item=>{
     return(
-<li key={item.id}>{item.value} <button onClick={()=>deleteItem(item.id)}>x</button></li>
+<ol key={item.id}>{item.value} <button onClick={()=>deleteItem(item.id)}>x</button></ol>
 
     )
     })}
