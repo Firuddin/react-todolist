@@ -17,6 +17,10 @@ function addItem(){
   setitem(olditems=>[...olditems,item])
   setNewItem("");
 }
+function deleteItem(id){
+const newArray = items.filter(item=>item.id!==id);
+setitem(newArray)
+}
 
   return(
     <div className="app">
@@ -33,7 +37,7 @@ onChange={e=>setNewItem(e.target.value)}
 <ul>
   {items.map(item=>{
     return(
-<li key={item.id}>{item.value}</li>
+<li key={item.id}>{item.value} <button onClick={()=>deleteItem(item.id)}>x</button></li>
 
     )
     })}
